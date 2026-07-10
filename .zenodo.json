@@ -5,9 +5,27 @@
   "version": "1.0.0",
   "creators": [
     {
-      "name": "Dong, Yubo"
+      "name": "Dong, Yubo",
+      "affiliation": "Qinghai Minzu University"
     }
   ],
-  "description": "Research artifact for Energy- and Carbon-aware Dynamic Scheduling (ECDS). Workflow JSON data are obtained separately from a pinned upstream source and are not redistributed by this archive.",
-  "license": "MIT"
+  "description": "Research artifact for Energy- and Carbon-aware Dynamic Scheduling (ECDS). It includes the simulator, scheduling implementations, configurations, fixed seeds, retained result summaries, plotting scripts, and reproducibility documentation. Workflow JSON data are obtained separately from the pinned WfCommons Pegasus execution-instance source and are not redistributed by this archive. Source repository: https://github.com/Dongyubo66/ecds-workflow-scheduling",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "DAG workflows",
+    "workflow scheduling",
+    "green energy",
+    "carbon-aware computing",
+    "multi-objective optimization",
+    "reproducible research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Dongyubo66/ecds-workflow-scheduling",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "software"
+    }
+  ]
 }

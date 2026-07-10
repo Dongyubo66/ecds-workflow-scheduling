@@ -3,7 +3,7 @@
 Generated: 2026-07-10
 
 ```text
-REPOSITORY_URL=
+REPOSITORY_URL=https://github.com/Dongyubo66/ecds-workflow-scheduling
 RELEASE_URL=
 RELEASE_TAG=v1.0.0
 FULL_COMMIT_SHA=
@@ -16,7 +16,7 @@ WORKFLOW_REDISTRIBUTED=no
 LICENSE=MIT
 ```
 
-No public GitHub repository or Zenodo archive existed when this file was generated. The empty publication fields are intentionally empty rather than placeholders.
+The repository URL above is live. Release and Zenodo fields remain empty until the corresponding public GitHub Release and Zenodo archive actually exist; they will be recorded on the default branch after archival. The v1.0.0 tag will remain fixed at the archive commit.
 
 ## Release file inventory
 

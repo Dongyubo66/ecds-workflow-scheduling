@@ -15,6 +15,8 @@ pwsh -File scripts/download_workflows.ps1
 python scripts/verify_workflows.py
 ```
 
+The download scripts pin the WfCommons Pegasus execution-instance source to commit `813a2a7d3e7273200805e89f5475f9126d903eab`. The workflow JSON files are retrieved separately and are not redistributed by this artifact.
+
 The verification program checks the six workflow files referenced by the release configurations against `manifests/workflow_sha256.txt`.
 
 ## Fixed seeds and configurations

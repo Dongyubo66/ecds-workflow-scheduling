@@ -37,7 +37,7 @@ pwsh -File scripts/download_workflows.ps1
 python scripts/verify_workflows.py
 ```
 
-The scripts obtain `wfcommons/pegasus-instances` at tag `v1.4` / commit `813a2a7d3e7273200805e89f5475f9126d903eab`. See [THIRD_PARTY_DATA.md](THIRD_PARTY_DATA.md) for provenance and limitations.
+The scripts obtain `wfcommons/pegasus-instances` at commit `813a2a7d3e7273200805e89f5475f9126d903eab` (the upstream `v1.4` revision). See [THIRD_PARTY_DATA.md](THIRD_PARTY_DATA.md) for provenance and limitations.
 
 ## Quick start
 
@@ -81,7 +81,7 @@ The implementation expects WfCommons-format JSON workflow instances. The upstrea
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). A repository URL and DOI will be added only after the corresponding public GitHub release and Zenodo archive actually exist.
+The source repository is [Dongyubo66/ecds-workflow-scheduling](https://github.com/Dongyubo66/ecds-workflow-scheduling). See [CITATION.cff](CITATION.cff) for citation metadata. The Zenodo version-specific DOI will be added only after the corresponding archive actually exists.
 
 ## License
 

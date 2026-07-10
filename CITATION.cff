@@ -7,4 +7,5 @@ authors:
 version: 1.0.0
 date-released: 2026-07-10
 license: MIT
+repository-code: "https://github.com/Dongyubo66/ecds-workflow-scheduling"
 abstract: "Research artifact for Energy- and Carbon-aware Dynamic Scheduling (ECDS)."
