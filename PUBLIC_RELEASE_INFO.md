@@ -4,19 +4,21 @@ Generated: 2026-07-10
 
 ```text
 REPOSITORY_URL=https://github.com/Dongyubo66/ecds-workflow-scheduling
-RELEASE_URL=
+RELEASE_URL=https://github.com/Dongyubo66/ecds-workflow-scheduling/releases/tag/v1.0.0
 RELEASE_TAG=v1.0.0
-FULL_COMMIT_SHA=
-SHORT_COMMIT_SHA=
-ZENODO_DOI=
-VERSION_DOI_URL=
+FULL_COMMIT_SHA=f4174d3b643570b14e724e1308e6fc1d2dfa3001
+SHORT_COMMIT_SHA=f4174d3
+ZENODO_DOI=10.5281/zenodo.21288886
+VERSION_DOI_URL=https://doi.org/10.5281/zenodo.21288886
+CONCEPT_DOI=10.5281/zenodo.21288885
+CONCEPT_DOI_URL=https://doi.org/10.5281/zenodo.21288885
 WORKFLOW_SOURCE_URL=https://github.com/wfcommons/pegasus-instances.git
 WORKFLOW_SOURCE_COMMIT=813a2a7d3e7273200805e89f5475f9126d903eab
 WORKFLOW_REDISTRIBUTED=no
 LICENSE=MIT
 ```
 
-The repository URL above is live. Release and Zenodo fields remain empty until the corresponding public GitHub Release and Zenodo archive actually exist; they will be recorded on the default branch after archival. The v1.0.0 tag will remain fixed at the archive commit.
+`FULL_COMMIT_SHA` and `SHORT_COMMIT_SHA` identify the immutable v1.0.0 tag commit archived by Zenodo. This file is updated on the default branch after archival; the default branch may therefore advance beyond the tag commit. The version-specific DOI is the citation target for this release, while the concept DOI groups all versions.
 
 ## Release file inventory
 

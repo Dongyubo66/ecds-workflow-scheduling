@@ -81,7 +81,7 @@ The implementation expects WfCommons-format JSON workflow instances. The upstrea
 
 ## Citation
 
-The source repository is [Dongyubo66/ecds-workflow-scheduling](https://github.com/Dongyubo66/ecds-workflow-scheduling). See [CITATION.cff](CITATION.cff) for citation metadata. The Zenodo version-specific DOI will be added only after the corresponding archive actually exists.
+The source repository is [Dongyubo66/ecds-workflow-scheduling](https://github.com/Dongyubo66/ecds-workflow-scheduling). The version-specific archival record for v1.0.0 is [10.5281/zenodo.21288886](https://doi.org/10.5281/zenodo.21288886). See [CITATION.cff](CITATION.cff) for citation metadata.
 
 ## License
 
