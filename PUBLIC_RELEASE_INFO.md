@@ -20,7 +20,7 @@ No public GitHub repository or Zenodo archive existed when this file was generat
 
 ## Release file inventory
 
-The planned v1.0.0 release consists of the tracked files in `src/`, `configs/`, `experiments/`, `plots/`, `scripts/`, `results/`, `manifests/`, and the root documentation/license/metadata files. The exact result files protected by checksums are listed in `manifests/results_sha256.txt`; the exact upstream workflow files are listed in `manifests/workflow_sha256.txt`.
+The planned v1.0.0 release consists of the tracked files enumerated in `manifests/release_files.txt`. The exact result files protected by checksums are listed in `manifests/results_sha256.txt`; the exact upstream workflow files are listed in `manifests/workflow_sha256.txt`.
 
 Before publishing, record the final tracked-file list with:
 
