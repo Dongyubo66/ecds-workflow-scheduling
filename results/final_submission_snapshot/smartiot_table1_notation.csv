@@ -1,0 +1,8 @@
+Symbol,Meaning
+"$G=(V,E)$",Workflow DAG with task set $V$ and precedence set $E$
+$r(v)$,Reference runtime of task $v$
+$rel(v)$,Release (visibility) time of task $v$
+$s_m$,Processing speed of machine $m$
+"$E(v,m)$",Estimated execution energy of assigning task $v$ to machine $m$
+"$E_{brown}(v,m)$",Brown-energy component of assigning task $v$ to machine $m$
+$J(m)$,Final normalized machine-selection score

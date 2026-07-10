@@ -1,0 +1,13 @@
+{
+  "title": "Green-Energy-Aware Online Multi-Objective Scheduling for Dynamic DAG Workflows",
+  "upload_type": "software",
+  "publication_date": "2026-07-10",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Dong, Yubo"
+    }
+  ],
+  "description": "Research artifact for Energy- and Carbon-aware Dynamic Scheduling (ECDS). Workflow JSON data are obtained separately from a pinned upstream source and are not redistributed by this archive.",
+  "license": "MIT"
+}

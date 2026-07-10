@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Green-Energy-Aware Online Multi-Objective Scheduling for Dynamic DAG Workflows"
+authors:
+  - family-names: Dong
+    given-names: Yubo
+version: 1.0.0
+date-released: 2026-07-10
+license: MIT
+abstract: "Research artifact for Energy- and Carbon-aware Dynamic Scheduling (ECDS)."

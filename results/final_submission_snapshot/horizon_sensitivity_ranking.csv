@@ -1,0 +1,9 @@
+family,workflow,instance,instance_scale_tag,scheduler,makespan_range,total_energy_range,total_carbon_range,green_ratio_range,brown_energy_range
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-50k-001,small,ECDS,95.0673923076923,36.78153383144226,16.68865990299193,0.33932004476199523,37.05547318912807
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,medium,HEFT,49.300813333333394,118.93061677742344,15.574974113921087,0.08136383472449987,40.35629238075603
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,medium,ECDS,97.42093179487179,18.724184588025608,8.890097426245344,0.459479886556312,19.652613311293276
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,medium,ECDS,33.433314294870456,8.24752377225468,8.679343217358735,0.017894117123006037,18.13910658561997
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,medium,ECDS,99.93630166666667,1.297887980695407,5.076906442186328,0.21048253614688572,10.024024086303076
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-50k-001,small,HEFT,98.40680826923078,3.4065309763719256,4.915441078231559,0.07413608201033844,9.714715014627942
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,medium,HEFT,99.31616692307695,0.46472262671473175,1.6958750831077722,0.06327467724697158,3.365455696183851
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,medium,HEFT,99.99263589743589,5.267946106182656,1.15048442749808,0.07363868719135327,1.909175889388493

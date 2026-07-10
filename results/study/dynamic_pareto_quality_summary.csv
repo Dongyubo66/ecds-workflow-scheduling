@@ -1,0 +1,13 @@
+family,workflow,instance,instance_scale_tag,instance_label,scheduler,n_points,HV,IGD,EPS_ADD,n_runs
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,medium,Epigenomics-100k,ECDS,9,0.7121861999337897,0.05287432192601583,0.09698565894107594,5
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,medium,Epigenomics-100k,GREENHEFT,1,0.055749101872773064,0.7171552918440487,0.8845628512226219,5
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,medium,Epigenomics-100k,HEFT,1,0.04915383965957485,0.7349645065229226,0.897817388006027,5
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,medium,Epigenomics-100k,MOHEFT,2,0.14141523613088025,0.5770728949555153,0.7552596205320372,5
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,medium,Montage-05d,ECDS,16,0.925338037461003,0.08644336375918037,0.25533523738537867,5
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,medium,Montage-05d,GREENHEFT,9,0.4467792315145216,0.3158751580497439,0.5165302174946953,5
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,medium,Montage-05d,HEFT,4,0.26373059925331344,0.4212101832673924,0.6432717021014424,5
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,medium,Montage-05d,MOHEFT,8,0.8810017081085668,0.22379869566674912,0.31025131434769626,5
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,medium,Seismology-200p,ECDS,7,1.2266433839752167,0.13677422798035208,0.0652759557288285,5
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,medium,Seismology-200p,GREENHEFT,3,0.10211529314419132,0.558626642826708,0.8228060534805807,5
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,medium,Seismology-200p,HEFT,3,0.034577998548426934,0.7409182421198226,0.9364499781239358,5
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,medium,Seismology-200p,MOHEFT,5,0.32476979885537394,0.3470323125281544,0.6022118527005881,5

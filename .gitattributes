@@ -1,0 +1,4 @@
+# Preserve retained experimental artifacts byte-for-byte.
+results/** -text
+manifests/results_sha256.txt text eol=lf
+manifests/workflow_sha256.txt text eol=lf

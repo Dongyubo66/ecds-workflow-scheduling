@@ -1,0 +1,4 @@
+﻿instance,family,workflow,instance_label,scheduler,budget_tag,decision_budget_ms,IGD_mean,IGD_std,EPS_ADD_mean,EPS_ADD_std,n_points_mean,n_runs
+epigenomics-chameleon-hep-1seq-100k-001,epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,Epigenomics-100k,ECDS,ecds_ref,0.0,0.7132923674198343,,0.8890501093785242,,5.0,1
+seismology-chameleon-200p-001,seismology/chameleon-cloud,seismology/chameleon-cloud,Seismology-200p,ECDS,ecds_ref,0.0,0.745033980259233,,0.9238794363042097,,5.0,1
+montage-chameleon-2mass-05d-001,montage/chameleon-cloud,montage/chameleon-cloud,Montage-05d,ECDS,ecds_ref,0.0,0.4760551808816925,,0.724085492268788,,5.0,1

@@ -1,0 +1,34 @@
+base_config: configs/dynamic_all4_base.yaml
+
+experiment:
+  name: dynamic_cross_family_all4
+  scenario: dynamic
+  quiet: true
+  timeout_s: 2400
+  keep_single_run_files: true
+  trace: false
+  output_dir: results/dynamic_cross_family_all4
+  aggregate_after_run: false
+
+dataset:
+  instances:
+    - workflow: montage/chameleon-cloud
+      instance: montage-chameleon-2mass-01d-001
+    - workflow: montage/chameleon-cloud
+      instance: montage-chameleon-2mass-05d-001
+    - workflow: epigenomics/chameleon-cloud
+      instance: epigenomics-chameleon-hep-1seq-50k-001
+    - workflow: epigenomics/chameleon-cloud
+      instance: epigenomics-chameleon-hep-1seq-100k-001
+    - workflow: seismology/chameleon-cloud
+      instance: seismology-chameleon-100p-001
+    - workflow: seismology/chameleon-cloud
+      instance: seismology-chameleon-200p-001
+
+matrix:
+  schedulers: [HEFT, GREENHEFT, MOHEFT, ECDS]
+  seeds: [1, 2, 3, 4, 5]
+  weight_mode: explicit
+  weights:
+    - [0.5, 0.3, 0.2, 0.2]
+  dynamic_T: [100]

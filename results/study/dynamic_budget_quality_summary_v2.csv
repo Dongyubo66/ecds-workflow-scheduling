@@ -1,0 +1,16 @@
+workflow,family,instance,instance_label,scheduler,budget_tag,budget_ms,HV,IGD,EPS_ADD,n_points
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,Epigenomics-100k,MOHEFT,high,100.0,0.9850032735585964,0.12134492715242477,0.10371747505814216,5.0
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,Epigenomics-100k,MOHEFT,low,20.0,0.9851268849380741,0.12704754303898047,0.11178391910659607,5.0
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,Epigenomics-100k,MOHEFT,medium,50.0,0.9792907934280233,0.12372057259280902,0.10920539602931789,5.0
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,Epigenomics-100k,MOHEFT,very_high,200.0,0.9850032735585964,0.12134492715242477,0.10371747505814216,5.0
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,Epigenomics-100k,MOHEFT,very_low,5.0,0.9756810734888399,0.13342688241858272,0.12077993001062874,5.0
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,Montage-05d,MOHEFT,high,100.0,0.7799981384827468,0.08038433890913446,0.16164867300057276,5.0
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,Montage-05d,MOHEFT,low,20.0,0.819050962046264,0.09873653274916395,0.10680421134764284,5.0
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,Montage-05d,MOHEFT,medium,50.0,0.8040244048898838,0.10457683084350836,0.12498861855670623,5.0
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,Montage-05d,MOHEFT,very_high,200.0,0.7639967848872115,0.08298299884075665,0.16009269273270263,5.0
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,Montage-05d,MOHEFT,very_low,5.0,0.46490820482877443,0.312559607602525,0.377454706532614,5.0
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,Seismology-200p,MOHEFT,high,100.0,0.39411045779500326,0.44816051623146164,0.6130772831937384,5.0
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,Seismology-200p,MOHEFT,low,20.0,0.3439279855982949,0.5077542897732035,0.710749043234289,5.0
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,Seismology-200p,MOHEFT,medium,50.0,0.49920571219304044,0.3722765885114361,0.5434859407049791,5.0
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,Seismology-200p,MOHEFT,very_high,200.0,0.3733022476751199,0.46165344208298764,0.6365639943376242,5.0
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,Seismology-200p,MOHEFT,very_low,5.0,0.21256207139468516,0.6105253638196431,0.8402955527156942,5.0

@@ -1,0 +1,16 @@
+﻿family,workflow,instance,instance_label,scheduler,budget_tag,decision_budget_ms,IGD_mean,IGD_std,EPS_ADD_mean,EPS_ADD_std,n_points_mean,n_runs
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,Epigenomics-100k,MOHEFT,very_low,5.0,0.7391589486684971,,0.9009286524491265,,5.0,1
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,Epigenomics-100k,MOHEFT,low,20.0,0.7378145001138492,,0.9000439069208109,,5.0,1
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,Epigenomics-100k,MOHEFT,medium,50.0,0.7364831051814654,,0.8997903126570181,,5.0,1
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,Epigenomics-100k,MOHEFT,high,100.0,0.7356627312058168,,0.89925058303788,,5.0,1
+epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,Epigenomics-100k,MOHEFT,very_high,200.0,0.7356627312058168,,0.89925058303788,,5.0,1
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,Seismology-200p,MOHEFT,very_low,5.0,0.7821651166938162,,0.9774260040723811,,5.0,1
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,Seismology-200p,MOHEFT,low,20.0,0.7638309589531085,,0.967901392083442,,5.0,1
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,Seismology-200p,MOHEFT,medium,50.0,0.7381786430519248,,0.9556037535130526,,5.0,1
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,Seismology-200p,MOHEFT,high,100.0,0.7456539853900528,,0.9607202984330835,,5.0,1
+seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,Seismology-200p,MOHEFT,very_high,200.0,0.7485445869210787,,0.96244710536472,,5.0,1
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,Montage-05d,MOHEFT,very_low,5.0,0.3647182119707456,,0.5861620810238675,,5.0,1
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,Montage-05d,MOHEFT,low,20.0,0.3190154993345253,,0.5117877366217733,,5.0,1
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,Montage-05d,MOHEFT,medium,50.0,0.31703700876948476,,0.5121643424302509,,5.0,1
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,Montage-05d,MOHEFT,high,100.0,0.3308695733488155,,0.5273936438571772,,5.0,1
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,Montage-05d,MOHEFT,very_high,200.0,0.3228799685252705,,0.52542544682765,,5.0,1

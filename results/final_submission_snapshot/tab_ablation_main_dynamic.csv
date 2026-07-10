@@ -1,0 +1,6 @@
+instance_label,family,scenario,variant_label,makespan_mean,makespan_std,total_energy_mean,total_energy_std,total_carbon_mean,total_carbon_std,brown_energy_mean,brown_energy_std,green_ratio_mean,green_ratio_std,avg_utilization_mean,avg_utilization_std,scheduler_wallclock_s_mean,scheduler_wallclock_s_std,n_runs
+Montage-05d,montage/chameleon-cloud,dynamic,ECDS,238.296845,204.752909,1220.544699,137.268845,377.311967,36.035915,632.569465,81.408594,0.468559,0.125402,0.582516,0.252073,2.991836,0.050239,105
+Montage-05d,montage/chameleon-cloud,dynamic,ECDS-NOCLUSTER,237.714897,205.377321,1220.918983,137.31746,377.515236,36.144872,632.938574,81.594683,0.468424,0.125373,0.586274,0.253699,0.207442,0.003278,105
+Montage-05d,montage/chameleon-cloud,dynamic,ECDS-NORESCHED,238.296845,204.752909,1220.544699,137.268845,377.311967,36.035915,632.569465,81.408594,0.468559,0.125402,0.582516,0.252073,2.987227,0.040191,105
+Montage-05d,montage/chameleon-cloud,dynamic,ECDS-NOBROWN,157.573769,89.677349,1143.631526,145.002109,403.97254,12.999454,693.581927,40.18269,0.377286,0.129894,0.7022,0.266588,2.995815,0.036795,105
+Montage-05d,montage/chameleon-cloud,dynamic,ECDS-NOCLUSTER-NOBROWN,157.514794,89.707917,1144.615618,145.4438,404.007695,12.952462,693.553829,40.133916,0.377783,0.130003,0.703549,0.267224,0.206256,0.003,105

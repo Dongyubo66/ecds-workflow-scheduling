@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+.venv/
+venv/
+data/pegasus-instances/
+configs/_tmp_runs/
+configs/_tmp_budget/
+results/runs/
+*.log
+.env
+.env.*

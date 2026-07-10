@@ -1,0 +1,129 @@
+seed: 42
+seeds: [1,2,3,4,5]
+
+dataset:
+  base_dir: "data/pegasus-instances"
+  workflows:
+    - "montage/chameleon-cloud"
+  instances:
+    - "montage-chameleon-2mass-01d-001"
+  arrivals: [0]
+
+dynamic:
+  task_release_random: true
+  task_release_T: 100
+
+resources:
+  sites:
+    qh:
+      ci_green: 0.05
+      ci_brown: 0.55
+      green_profile:
+        - {start: 0, green: 0.60}
+        - {start: 50, green: 0.90}
+        - {start: 120, green: 0.70}
+
+    grid:
+      ci_green: 0.05
+      ci_brown: 0.55
+      green_profile:
+        - {start: 0, green: 0.15}
+        - {start: 50, green: 0.25}
+        - {start: 120, green: 0.10}
+
+  machines:
+    - {name: "m1", site: "qh",   speed: 4.0,  f: 0.8,  a: 1.6, b: 0.35}
+    - {name: "m2", site: "qh",   speed: 6.0,  f: 0.9,  a: 1.4, b: 0.30}
+    - {name: "m3", site: "qh",   speed: 8.0,  f: 1.0,  a: 1.2, b: 0.28}
+    - {name: "m4", site: "qh",   speed: 10.0, f: 1.0,  a: 1.1, b: 0.25}
+    - {name: "m5", site: "grid", speed: 12.0, f: 1.05, a: 1.0, b: 0.22}
+    - {name: "m6", site: "grid", speed: 16.0, f: 1.1,  a: 0.9, b: 0.20}
+    - {name: "m7", site: "grid", speed: 20.0, f: 1.2,  a: 0.95, b: 0.18}
+    - {name: "m8", site: "grid", speed: 26.0, f: 1.25, a: 1.05, b: 0.16}
+
+objective:
+  w1: 0.5
+  w2: 0.3
+  w3: 0.2
+  w4: 0.2
+
+scheduler:
+  name: "ECDS"
+
+  clustering:
+    enabled: true
+    method: "auto"
+    k: 8
+    dbscan_eps: 0.8
+    dbscan_min_samples: 3
+    auto_large_n_threshold: 2000
+    auto_large_n_method: "kmeans"
+    score_a: 0.5
+    score_b: 0.3
+    score_c: 0.2
+
+  reschedule:
+    enabled: false
+    dyn_threshold: 0.2
+    cooldown: 30.0
+    util_window: 50.0
+
+  moheft:
+    decision_budget_ms: 100.0
+    candidate_cap: 64
+    frontier_cap: 12
+
+# =========================================================
+# New: study block for richer Fig.6–8 experiments
+# =========================================================
+study:
+  enabled: true
+
+  # 可选：single / pareto / budget / all
+  mode: "all"
+
+  # 统一 family / instance 清单
+  instances:
+    - {workflow: "montage/chameleon-cloud",      instance: "montage-chameleon-2mass-01d-001",   arrival: 0}
+    - {workflow: "montage/chameleon-cloud",      instance: "montage-chameleon-2mass-05d-001",   arrival: 0}
+    - {workflow: "epigenomics/chameleon-cloud",  instance: "epigenomics-chameleon-hep-1seq-50k-001",  arrival: 0}
+    - {workflow: "epigenomics/chameleon-cloud",  instance: "epigenomics-chameleon-hep-1seq-100k-001", arrival: 0}
+    - {workflow: "seismology/chameleon-cloud",   instance: "seismology-chameleon-100p-001",     arrival: 0}
+    - {workflow: "seismology/chameleon-cloud",   instance: "seismology-chameleon-200p-001",     arrival: 0}
+
+  # 用于 richer Pareto projection（Fig.6）
+  pareto_probe_instances:
+    - {workflow: "epigenomics/chameleon-cloud",  instance: "epigenomics-chameleon-hep-1seq-100k-001", arrival: 0}
+    - {workflow: "seismology/chameleon-cloud",   instance: "seismology-chameleon-200p-001",     arrival: 0}
+    - {workflow: "montage/chameleon-cloud",      instance: "montage-chameleon-2mass-05d-001",   arrival: 0}
+
+  # 用于 richer budget sensitivity（Fig.7–8）
+  budget_probe_instances:
+    - {workflow: "montage/chameleon-cloud",      instance: "montage-chameleon-2mass-05d-001",   arrival: 0}
+    - {workflow: "epigenomics/chameleon-cloud",  instance: "epigenomics-chameleon-hep-1seq-100k-001", arrival: 0}
+    - {workflow: "seismology/chameleon-cloud",   instance: "seismology-chameleon-200p-001",     arrival: 0}
+
+  pareto_schedulers: ["HEFT", "GREENHEFT", "MOHEFT", "ECDS"]
+
+  # 比原来更丰富的权重网格，用来生成更密的 Pareto 点
+  objective_grid:
+    - {tag: "w_70_20_10_00", w1: 0.70, w2: 0.20, w3: 0.10, w4: 0.00}
+    - {tag: "w_55_25_20_00", w1: 0.55, w2: 0.25, w3: 0.20, w4: 0.00}
+    - {tag: "w_50_30_20_00", w1: 0.50, w2: 0.30, w3: 0.20, w4: 0.00}
+    - {tag: "w_40_30_20_10", w1: 0.40, w2: 0.30, w3: 0.20, w4: 0.10}
+    - {tag: "w_50_30_20_20", w1: 0.50, w2: 0.30, w3: 0.20, w4: 0.20}
+    - {tag: "w_50_30_20_30", w1: 0.50, w2: 0.30, w3: 0.20, w4: 0.30}
+    - {tag: "w_35_25_20_20", w1: 0.35, w2: 0.25, w3: 0.20, w4: 0.20}
+    - {tag: "w_25_25_20_30", w1: 0.25, w2: 0.25, w3: 0.20, w4: 0.30}
+
+  # richer budget ladder for MOHEFT
+  moheft_budgets:
+    - {tag: "very_low", decision_budget_ms: 5.0,   candidate_cap: 8,   frontier_cap: 4}
+    - {tag: "low",      decision_budget_ms: 20.0,  candidate_cap: 16,  frontier_cap: 6}
+    - {tag: "medium",   decision_budget_ms: 50.0,  candidate_cap: 32,  frontier_cap: 8}
+    - {tag: "high",     decision_budget_ms: 100.0, candidate_cap: 64,  frontier_cap: 12}
+    - {tag: "very_high",decision_budget_ms: 200.0, candidate_cap: 128, frontier_cap: 20}
+
+  outputs:
+    pareto_raw_csv: "results/study/dynamic_pareto_study_raw.csv"
+    budget_raw_csv: "results/study/dynamic_budget_study_raw.csv"

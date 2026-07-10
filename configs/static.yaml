@@ -1,0 +1,73 @@
+#seed: 42
+seeds: [1,2,3,4,5]
+
+dataset:
+  base_dir: "data/pegasus-instances"
+  workflows:
+    - "montage/chameleon-cloud"
+  instances:
+    - "montage-chameleon-2mass-01d-001"
+  arrivals: [0]
+
+dynamic:
+  task_release_random: false
+  task_release_T: 0
+
+resources:
+  # --- site-level green profiles ---
+  sites:
+    qh:
+      ci_green: 0.05
+      ci_brown: 0.55
+      green_profile:
+        - {start: 0, green: 0.60}
+        - {start: 50, green: 0.90}
+        - {start: 120, green: 0.70}
+
+    grid:
+      ci_green: 0.05
+      ci_brown: 0.55
+      green_profile:
+        - {start: 0, green: 0.15}
+        - {start: 50, green: 0.25}
+        - {start: 120, green: 0.10}
+
+  machines:
+    # qh site: fewer but greener
+    - {name: "m1", site: "qh",   speed: 4.0,  f: 0.8,  a: 1.6, b: 0.35}
+    - {name: "m2", site: "qh",   speed: 6.0,  f: 0.9,  a: 1.4, b: 0.30}
+    - {name: "m3", site: "qh",   speed: 8.0,  f: 1.0,  a: 1.2, b: 0.28}
+    - {name: "m4", site: "qh",   speed: 10.0, f: 1.0,  a: 1.1, b: 0.25}
+
+    # grid site: faster but browner (in g(t))
+    - {name: "m5", site: "grid", speed: 12.0, f: 1.05, a: 1.0, b: 0.22}
+    - {name: "m6", site: "grid", speed: 16.0, f: 1.1,  a: 0.9, b: 0.20}
+    - {name: "m7", site: "grid", speed: 20.0, f: 1.2,  a: 0.95,b: 0.18}
+    - {name: "m8", site: "grid", speed: 26.0, f: 1.25, a: 1.05,b: 0.16}
+
+objective:
+  w1: 0.5
+  w2: 0.3
+  w3: 0.2
+  w4: 0.5
+
+scheduler:
+  name: "HEFT"
+  clustering:
+    enabled: true
+    method: "auto"     # auto/kmeans/dbscan/none
+    k: 8
+    dbscan_eps: 0.8
+    dbscan_min_samples: 3
+    auto_large_n_threshold: 2000
+    auto_large_n_method: "kmeans"
+    # cluster score weights
+    score_a: 0.5
+    score_b: 0.3
+    score_c: 0.2
+
+  reschedule:
+    enabled: false
+    dyn_threshold: 0.2
+    cooldown: 30.0
+    util_window: 50.0

@@ -1,0 +1,9 @@
+family,workflow,instance,instance_scale_tag,scenario,n_seeds,task_release_random,task_release_T,used_in_main,used_in_pareto,used_in_budget,schedulers
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-10d-001,large,dynamic,5,True,100,True,False,False,"ECDS,FCFS,HEFT,LIST"
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-10d-001,large,static,5,False,0,True,False,False,"ECDS,FCFS,HEFT,LIST"
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,medium,dynamic,5,True,100,True,False,True,"ECDS,FCFS,HEFT,LIST"
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-05d-001,medium,static,5,False,0,True,False,True,"ECDS,FCFS,HEFT,LIST"
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-01d-001,small,dynamic,5,True,100,True,False,False,"ECDS,FCFS,HEFT,LIST"
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-01d-001,small,static,5,False,0,True,False,False,"ECDS,FCFS,HEFT,LIST"
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-15d-001,unknown,dynamic,5,True,100,True,False,False,"ECDS,FCFS,HEFT,LIST"
+montage/chameleon-cloud,montage/chameleon-cloud,montage-chameleon-2mass-15d-001,unknown,static,5,False,0,True,False,False,"ECDS,FCFS,HEFT,LIST"

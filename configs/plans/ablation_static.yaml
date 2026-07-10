@@ -1,0 +1,38 @@
+base_config: configs/static.yaml
+
+experiment:
+  name: ablation_static
+  scenario: static
+  quiet: true
+  timeout_s: 1200
+  keep_single_run_files: true
+  trace: false
+  output_dir: results/ablation_static
+  aggregate_after_run: false
+
+dataset:
+  instances:
+    - workflow: montage/chameleon-cloud
+      instance: montage-chameleon-2mass-05d-001
+
+matrix:
+  schedulers: [ECDS]
+  seeds: [1, 2, 3]
+  weight_mode: simplex_0.25
+  dynamic_T: [0]
+
+  ablations:
+    - tag: full
+
+    - tag: no_resched
+      reschedule_enabled: false
+
+    - tag: no_brown
+      force_w4: 0.0
+
+    - tag: no_cluster
+      clustering_method: none
+
+    - tag: no_cluster_no_brown
+      clustering_method: none
+      force_w4: 0.0

@@ -1,0 +1,9 @@
+instance_label,family,workflow,instance,instance_scale_tag,scenario,scheduler,n_points,HV,IGD,EPS_ADD
+Epigenomics-100k,epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,medium,static,HEFT,10.0,0.0359,0.6782,1.0
+Epigenomics-100k,epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,medium,static,GREENHEFT,10.0,0.0003,1.2282,1.0
+Epigenomics-100k,epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,medium,static,MOHEFT,10.0,0.1154,0.6136,0.9441
+Epigenomics-100k,epigenomics/chameleon-cloud,epigenomics/chameleon-cloud,epigenomics-chameleon-hep-1seq-100k-001,medium,static,ECDS,9.0,0.0,0.9622,1.0792
+Seismology-200p,seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,medium,static,HEFT,10.0,0.0357,0.6542,1.0
+Seismology-200p,seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,medium,static,GREENHEFT,10.0,0.0003,1.301,1.0
+Seismology-200p,seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,medium,static,MOHEFT,6.0,0.0496,0.6308,0.9858
+Seismology-200p,seismology/chameleon-cloud,seismology/chameleon-cloud,seismology-chameleon-200p-001,medium,static,ECDS,9.0,0.124,0.6365,0.9168
